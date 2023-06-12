@@ -1,6 +1,7 @@
 
 from typing import List
-
+# leetcode: problem4
+# https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
@@ -18,3 +19,4 @@ nums1 = [1, 3]
 nums2 = [2]
 target = 2
 assert target == s.findMedianSortedArrays(nums1, nums2)
+
