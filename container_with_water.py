@@ -1,4 +1,4 @@
-height = [1,8,6,2,5,4,8,3,7]
+height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 
 left = 0
 right = len(height) - 1
