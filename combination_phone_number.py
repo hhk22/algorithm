@@ -11,13 +11,14 @@ def update(digit, result):
         for character in dictionary[digit]:
             result.append(character)
         return result
-    
+
     new_result = []
     while result:
         tmp = result.pop()
         for chracter in dictionary[digit]:
             new_result.append(tmp + chracter)
     return new_result
+
 
 def combination_phone_number(digits):
     result = []
