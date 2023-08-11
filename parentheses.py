@@ -1,6 +1,4 @@
 
-
-
 def isValid(s: str) -> bool:
     counters = {
         "(": ")",
