@@ -47,18 +47,6 @@ class Solution:
         return False
 
 
-        
-
-
-
-
-        
-
-
-
-
-
-
 if __name__ == '__main__':
     example_board = [
         ["5", "3", ".", ".", "7", ".", ".", ".", "."],
