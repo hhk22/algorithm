@@ -27,5 +27,3 @@ def dfs(idx, temp, tot):
 
 dfs(0, [], 0)
 print(output)
-
-
