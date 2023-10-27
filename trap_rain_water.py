@@ -8,7 +8,7 @@ max_height = max(height)
 max_idx_to_right = None
 max_idx_to_left = None
 for idx, num in enumerate(height):
-    if num == max_height: 
+    if num == max_height:
         max_idx_to_right = idx
         break
 
