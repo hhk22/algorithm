@@ -4,6 +4,7 @@ p = "a"
 output = False
 
 
-for i in len(s):
-    for j in len(p):
-        dp[]
+dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
+dp[0][0] = True
+
+print(dp)
