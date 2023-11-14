@@ -31,5 +31,6 @@ class Solution:
 
 
 s = Solution()
+nums.sort()
 rst = s.permute(nums)
 print(rst)
