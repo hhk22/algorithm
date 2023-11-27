@@ -1,7 +1,7 @@
 
 import itertools
 
-matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
 visited = [[False]*len(matrix[0]) for _ in range(len(matrix))]
 direction = ["right", "down", "left", "up"]
 cycle_dir = itertools.cycle(direction)
@@ -15,7 +15,7 @@ def move(i, j):
         return (i, j)
     else:
         return "out"
-        
+
 
 curr_i = 0
 curr_j = 0
