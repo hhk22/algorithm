@@ -29,7 +29,7 @@ class Solution:
             return dp[-1][-1]
 
 
-obstacleGrid = [[0,0],[1,1],[0,0]]
+obstacleGrid = [[0, 0], [1, 1], [0, 0]]
 s = Solution()
 rst = s.uniquePathsWithObstacles(obstacleGrid)
 print(rst)
