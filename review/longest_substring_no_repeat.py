@@ -15,15 +15,15 @@ Output: 1
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        maps = {}
-        left = 0
+        record = {}
         max_len = 0
+        left = 0
 
         for i, ch in enumerate(s):
-            if ch in maps:
-                left = max(left, maps[ch] + 1)
+            if ch in record:
+                left = max(record[ch] + 1, left)
             max_len = max(max_len, i - left + 1)
-            maps[ch] = i
+            record[ch] = i
 
         return max_len
 
