@@ -16,15 +16,16 @@ Output: 1
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         record = {}
-        max_len = 0
         left = 0
+        max_len = 0
 
-        for i, ch in enumerate(s):
+        for idx, ch in enumerate(s):
             if ch in record:
-                left = max(record[ch] + 1, left)
-            max_len = max(max_len, i - left + 1)
-            record[ch] = i
+                left = max(left, record[ch] + 1)
+            max_len = max(max_len, idx - left + 1)
+            record[ch] = idx
 
+        print(max_len)
         return max_len
 
 
