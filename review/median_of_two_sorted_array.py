@@ -1,9 +1,6 @@
 
-import itertools
-
-
 class Solution:
-    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]):
         def get_med_elem(arr):
             med_idx = int(len(arr) / 2)
             if len(arr) % 2 == 0:
@@ -39,7 +36,6 @@ class Solution:
 
         rst = get_med_elem(combined_nums)
         return rst
-
 
 
 s = Solution()
