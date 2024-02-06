@@ -25,7 +25,6 @@ class Solution:
             max_len = max(max_len, idx - left + 1)
             record[ch] = idx
 
-        print(max_len)
         return max_len
 
 
