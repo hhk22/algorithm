@@ -14,17 +14,19 @@ class Solution:
             1000: "M",
             900: "CM",
             500: "D",
+            400: "CD",
             100: "C",
             90: "XC",
             50: "L",
+            40: "XL",
             10: "X",
-            9: "IV",
+            9: "IX",
             5: "V",
             4: "IV",
             1: "I"
         }
 
-        candidates = [1000, 900, 500, 100, 90, 50, 10, 9, 5, 4, 1]
+        candidates = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
         output_str = ""
 
         for candidate in candidates:
@@ -39,3 +41,4 @@ s = Solution()
 assert s.intToRoman(3) == "III"
 assert s.intToRoman(58) == "LVIII"
 assert s.intToRoman(1994) == "MCMXCIV"
+assert s.intToRoman(40) == "XL"
